@@ -10,7 +10,7 @@ class NotsAppBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
+      padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 32),
       child: Column(
         children: [
           CoustomAppbar(),
