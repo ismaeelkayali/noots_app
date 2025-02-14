@@ -3,18 +3,19 @@ import 'package:flutter/material.dart';
 import 'coustom_icon_appbar.dart';
 
 class CoustomAppbar extends StatelessWidget {
-  const CoustomAppbar({super.key});
-
+  const CoustomAppbar({super.key, required this.text, required this.icon});
+final String text;
+final Icon icon;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text("Notes App",
+        Text(text,
         style: TextStyle(
           fontSize: 32,
         ),),
-          CoustomIconAppbar()
+          CoustomIconAppbar(icon: icon,)
       ],
     );
   }

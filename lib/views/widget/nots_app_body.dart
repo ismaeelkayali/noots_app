@@ -13,7 +13,7 @@ class NotsAppBody extends StatelessWidget {
       padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 32),
       child: Column(
         children: [
-          CoustomAppbar(),
+          CoustomAppbar(text: "Notes App",icon: Icon(Icons.search,size: 28,),),
           SizedBox( height: 10,),
           Expanded(child: NotesListview()),
         ],
